@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GadiAdmin</string>
+    <string name="tagline">Experience beauty in every detail with our app Where style meets Convenience !</string>
+    <string name="admintagline">Please enter admin email and password to get access of admin app</string>
+</resources>
