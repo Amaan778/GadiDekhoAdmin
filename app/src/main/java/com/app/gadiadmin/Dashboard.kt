@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.app.gadiadmin.Categories.CreateCategories
+import com.app.gadiadmin.bookings.BookingActivity
 import com.app.gadiadmin.login.LoginDetaiks
 import com.app.gadiadmin.manageservice.ManageService
 import com.app.gadiadmin.notification.CreateNotification
@@ -19,6 +20,7 @@ class Dashboard : AppCompatActivity() {
     private lateinit var slider:TextView
     private lateinit var notification:TextView
     private lateinit var loginDetail:TextView
+    private lateinit var booking:TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +31,7 @@ class Dashboard : AppCompatActivity() {
         slider=findViewById(R.id.slider)
         notification=findViewById(R.id.notification)
         loginDetail=findViewById(R.id.login)
+        booking=findViewById(R.id.bookings)
 
         category.setOnClickListener {
             startActivity(Intent(this,CreateCategories::class.java))
@@ -48,6 +51,10 @@ class Dashboard : AppCompatActivity() {
 
         loginDetail.setOnClickListener {
             startActivity(Intent(this,LoginDetaiks::class.java))
+        }
+
+        booking.setOnClickListener {
+            startActivity(Intent(this,BookingActivity::class.java))
         }
 
     }

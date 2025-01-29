@@ -15,6 +15,9 @@
         android:theme="@style/Theme.GadiAdmin"
         tools:targetApi="31">
         <activity
+            android:name=".bookings.BookingActivity"
+            android:exported="false" />
+        <activity
             android:name=".login.LoginDetaiks"
             android:exported="false" />
         <activity
